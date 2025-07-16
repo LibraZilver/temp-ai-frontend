@@ -1,3 +1,6 @@
+/* เพิ่มฟอนต์ไทยไม่มีหัว */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Prompt:wght@300;400;500;600;700&display=swap');
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -150,9 +153,7 @@ h1 {
   }
 }
 
-/* เพิ่มฟอนต์ไทยไม่มีหัว */
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Prompt:wght@300;400;500;600;700&display=swap');
-
+/* ฟอนต์ไทยไม่มีหัว */
 body {
   font-family: 'Kanit', 'Prompt', 'Noto Sans Thai', -apple-system, BlinkMacSystemFont, sans-serif;
 }
