@@ -19,11 +19,11 @@ function Login(): React.JSX.Element {
     }
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white flex items-center justify-center p-8">
+        <div className="min-h-screen bg-gradient-to-br from-neutral-900 via-web-green-900 to-neutral-900 text-white flex items-center justify-center p-8">
             <div className="bg-white/10 backdrop-blur-md rounded-xl p-8 border border-white/20 shadow-2xl max-w-md w-full">
                 {/* Header */}
                 <div className="text-center mb-8">
-                    <h1 className="text-3xl font-bold mb-2 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                    <h1 className="text-3xl font-bold mb-2 bg-gradient-to-r from-web-green-400 to-web-green-500 bg-clip-text text-transparent">
                         เข้าสู่ระบบ 🔐
                     </h1>
                     <p className="text-gray-300">
@@ -44,7 +44,7 @@ function Login(): React.JSX.Element {
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             required
-                            className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent transition-all duration-300"
+                            className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-web-green-400 focus:border-transparent transition-all duration-300"
                             placeholder="your@email.com"
                         />
                     </div>
@@ -60,7 +60,7 @@ function Login(): React.JSX.Element {
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             required
-                            className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent transition-all duration-300"
+                            className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-web-green-400 focus:border-transparent transition-all duration-300"
                             placeholder="••••••••"
                         />
                     </div>
@@ -69,7 +69,7 @@ function Login(): React.JSX.Element {
                     <button
                         type="submit"
                         disabled={loading}
-                        className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 disabled:from-gray-500 disabled:to-gray-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 disabled:scale-100 shadow-lg"
+                        className="w-full bg-gradient-to-r from-web-green-500 to-web-green-600 hover:from-web-green-600 hover:to-web-green-700 disabled:from-gray-500 disabled:to-gray-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 disabled:scale-100 shadow-lg"
                     >
                         {loading ? (
                             <span className="flex items-center justify-center">
@@ -89,7 +89,7 @@ function Login(): React.JSX.Element {
                 <div className="mt-8 text-center">
                     <Link
                         to="/"
-                        className="text-cyan-400 hover:text-cyan-300 transition-colors duration-300"
+                        className="text-web-green-400 hover:text-web-green-300 transition-colors duration-300"
                     >
                         ← กลับสู่หน้าหลัก
                     </Link>
