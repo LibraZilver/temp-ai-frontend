@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #2d5a27 0%, #00c896 100%);
   min-height: 100vh;
   border-radius: 20px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
@@ -11,7 +11,7 @@
 
 h1 {
   font-size: 3.5rem;
-  background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #ffeaa7);
+  background: linear-gradient(45deg, #00c896, #2d5a27, #45b7d1, #96ceb4, #ffeaa7);
   background-size: 400% 400%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -80,7 +80,7 @@ h1 {
 }
 
 .card button {
-  background: linear-gradient(45deg, #667eea, #764ba2);
+  background: linear-gradient(45deg, #2d5a27, #00c896);
   border: none;
   padding: 12px 24px;
   border-radius: 25px;
@@ -96,7 +96,7 @@ h1 {
 .card button:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(45deg, #764ba2, #667eea);
+  background: linear-gradient(45deg, #00c896, #2d5a27);
 }
 
 .card button:active {
@@ -150,7 +150,9 @@ h1 {
   }
 }
 
-/* เพิ่มฟอนต์ไทย */
+/* เพิ่มฟอนต์ไทยไม่มีหัว */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Prompt:wght@300;400;500;600;700&display=swap');
+
 body {
-  font-family: 'Sarabun', 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Kanit', 'Prompt', 'Noto Sans Thai', -apple-system, BlinkMacSystemFont, sans-serif;
 }
