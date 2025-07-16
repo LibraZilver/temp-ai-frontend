@@ -12,7 +12,8 @@ function Home(): React.JSX.Element {
         'Bonjour le monde! 🇫🇷',
         'Hola Mundo! 🇪🇸',
         '你好世界! 🇨🇳',
-        'こんにちは世界! 🇯🇵'
+        'こんにちは世界! 🇯🇵',
+        '안녕하세요 세계! 🇰🇷'
     ]
 
     const changeGreeting = (): void => {
