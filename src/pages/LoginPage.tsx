@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import { Link } from 'react-router'
-import { Button, Card, Input, LoadingSpinner } from '../components/ui'
+import { Button, Card, DatePicker, Input, LoadingSpinner } from '../components/ui'
 
 function LoginPage(): React.JSX.Element {
     const [email, setEmail] = useState<string>('')
     const [password, setPassword] = useState<string>('')
+    const [birthDate, setBirthDate] = useState<Date | null>(null)
     const [loading, setLoading] = useState<boolean>(false)
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>): Promise<void> => {
@@ -13,8 +14,8 @@ function LoginPage(): React.JSX.Element {
 
         // Simulate API call
         setTimeout(() => {
-            console.log('Login attempt:', { email, password })
-            alert(`ยินดีต้อนรับ! อีเมล: ${email}`)
+            console.log('Login attempt:', { email, password, birthDate })
+            alert(`ยินดีต้อนรับ! อีเมล: ${email}${birthDate ? `\nวันเกิด: ${birthDate.toLocaleDateString('th-TH')}` : ''}`)
             setLoading(false)
         }, 1000)
     }
@@ -54,6 +55,14 @@ function LoginPage(): React.JSX.Element {
                         onChange={(e) => setPassword(e.target.value)}
                         required
                         placeholder="••••••••"
+                    />
+
+                    <DatePicker
+                        label="วันเกิด"
+                        icon="🎂"
+                        placeholder="เลือกวันเกิดของคุณ"
+                        value={birthDate}
+                        onChange={setBirthDate}
                     />
 
                     <Button
