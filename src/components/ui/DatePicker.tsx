@@ -123,15 +123,15 @@ function DatePicker({
                     value={formattedDate}
                     onClick={toggleCalendar}
                     placeholder={placeholder}
-                    className="w-full p-3 bg-neutral-800 border border-neutral-600 rounded-lg text-white placeholder-gray-400 cursor-pointer focus:outline-none focus:ring-2 focus:ring-web-green-500 focus:border-web-green-500 transition-all duration-300"
+                    className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 cursor-pointer focus:outline-none focus:ring-2 focus:ring-web-green-400 focus:border-transparent transition-all duration-300"
                 />
                 {showCalendar && (
-                    <div className="absolute top-full left-0 mt-2 bg-neutral-800 border border-neutral-600 rounded-lg shadow-xl z-50 p-4 min-w-[280px]">
+                    <div className="absolute top-full left-0 mt-2 bg-neutral-900/95 backdrop-blur-sm border border-white/20 rounded-lg shadow-xl z-50 p-4 min-w-[280px]">
                         {/* Header */}
                         <div className="flex justify-between items-center mb-4">
                             <button
                                 onClick={prevMonth}
-                                className="p-2 hover:bg-neutral-700 rounded-lg transition-colors duration-200 text-white"
+                                className="p-2 hover:bg-white/10 rounded-lg transition-colors duration-200 text-white"
                                 type="button"
                             >
                                 ←
@@ -141,7 +141,7 @@ function DatePicker({
                             </span>
                             <button
                                 onClick={nextMonth}
-                                className="p-2 hover:bg-neutral-700 rounded-lg transition-colors duration-200 text-white"
+                                className="p-2 hover:bg-white/10 rounded-lg transition-colors duration-200 text-white"
                                 type="button"
                             >
                                 →
@@ -169,12 +169,12 @@ function DatePicker({
                                     type="button"
                                     className={`
                                         p-2 cursor-pointer rounded-lg transition-all duration-200 text-sm
-                                        ${day.otherMonth ? 'text-gray-600' : 'text-white'}
+                                        ${day.otherMonth ? 'text-gray-500' : 'text-white'}
                                         ${isSelected(day)
-                                            ? 'bg-web-green-500 text-white shadow-lg'
-                                            : 'hover:bg-neutral-700'
+                                            ? 'bg-web-green-400 text-white shadow-lg'
+                                            : 'hover:bg-white/10'
                                         }
-                                        ${!day.otherMonth ? 'hover:bg-web-green-500/20' : ''}
+                                        ${!day.otherMonth ? 'hover:bg-web-green-400/20' : ''}
                                     `}
                                 >
                                     {day.date.getDate()}
