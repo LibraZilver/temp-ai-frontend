@@ -3,10 +3,10 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-function App() {
-  const [greeting, setGreeting] = useState('Hello World! 🌍')
+function App(): React.JSX.Element {
+  const [greeting, setGreeting] = useState<string>('Hello World! 🌍')
 
-  const greetings = [
+  const greetings: string[] = [
     'Hello World! 🌍',
     'สวัสดีโลก! 🇹🇭',
     'Bonjour le monde! 🇫🇷',
@@ -15,7 +15,7 @@ function App() {
     'こんにちは世界! 🇯🇵'
   ]
 
-  const changeGreeting = () => {
+  const changeGreeting = (): void => {
     const currentIndex = greetings.indexOf(greeting)
     const nextIndex = (currentIndex + 1) % greetings.length
     setGreeting(greetings[nextIndex])
